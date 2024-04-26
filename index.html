@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +13,37 @@
     <title>Alivio</title>
 </head>
 <body>
-    <svg>
-        <use href="assets/sprites.svg#logo-icon"></use>
-    </svg>
+
+<header class="header" aria-label="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <svg class="logo" aria-label="logo">
+                <use href="assets/sprites.svg#logo-icon"></use>
+            </svg>
+
+            <nav class="header__nav" aria-label="navigation link">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Why Alivio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Solution</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Community</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button type="button" class="btn btn--signin">Sign in</button>
+                <button type="button" class="btn">Start Trial</button>
+            </div>
+        </div>
+    </div>
+</header>
 </body>
 </html>

@@ -1,0 +1,54 @@
+.hero {
+    background: url('../assets/webp/home.webp') center/cover no-repeat;
+    height: 890px;
+    width: 100%;
+}
+
+.hero__content {
+    padding: 175px 0 336px 0;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.hero__title{
+    font-size: 65px;
+    font-weight: 700;
+    color: var(--co-green);
+}
+
+.hero__description {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 44px 0 22px;
+    color: var(--co-black);
+}
+
+.hero__content .btn {
+    width: 230px;
+    height: 65px;
+}
+
+@media(max-width: 768px) {
+    .hero {
+        height: 700px;
+    }
+    .hero__content {
+        padding: 70px 0 0 0;
+
+    }
+}
+
+@media(max-width: 480px) {
+    .hero {
+        background:
+        linear-gradient(180deg, rgba(245, 246, 252, 0.71), rgba(131, 129, 129, 0.64)),
+        url('../assets/webp/home.webp') 60% 50%/cover no-repeat;
+    }
+    .hero__title{
+        font-size: 48px;
+        max-width: 420px;
+    }
+}

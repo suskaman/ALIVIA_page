@@ -22,7 +22,7 @@
 .header__nav-link {
     font-size: 20px;
     font-weight: 500;
-    color: var(--co-black);
+    color: var(--co-whiteblack);
     white-space: nowrap;
 }
 
